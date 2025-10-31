@@ -5,7 +5,7 @@ import { AIPrompts, DEFAULT_AI_PROMPTS } from './services/geminiService';
 import { ComponentStyles, ObjectiveSettings } from './types';
 
 import { Sidebar } from './Sidebar';
-import { Header } from './Header';
+import Header from './Header';
 import LoginPage from './components/LoginPage';
 import DashboardPage from './DashboardPage';
 import EditProfileModal from './components/EditProfileModal';

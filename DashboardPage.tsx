@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useRef, useCallback, useEffect } from 'react';
-import { Objective, User, KeyResult, ObjectiveSettings } from '../types';
+import { Objective, User, KeyResult, ObjectiveSettings } from './types';
 import ObjectiveRow from './ObjectiveRow';
 import KeyResultRow from './KeyResultRow';
-import { OBJECTIVE_CATEGORIES, OBJECTIVE_COLOR_MAP } from '../constants';
+import { OBJECTIVE_CATEGORIES, OBJECTIVE_COLOR_MAP } from './constants';
 import HierarchicalView from './HierarchicalView';
 import { SparklesIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, RocketIcon, DocumentArrowUpIcon } from './Icons';
 import ObjectiveCreateMenu from './ObjectiveCreateMenu';
