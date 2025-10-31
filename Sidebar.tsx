@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, SidebarConfig, NavItem } from '../types';
+import { User, SidebarConfig, NavItem } from './types';
 import { ThreeDotsIcon, Bars3Icon, TickupLogoIcon } from './Icons';
 import UserProfile from './UserProfile';
 

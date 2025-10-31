@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { KeyResult, User, KRType, KRCategory, StretchLevel, ReportFrequency } from '../types';
-import Modal from './Modal';
+import { KeyResult, User, KRType, KRCategory, StretchLevel, ReportFrequency } from './types';
+import Modal from './components/Modal';
 import { PlusIcon, TrashIcon, ArrowUpIcon, ArrowDownIcon } from './Icons';
 import DueDateSelector from './DueDateSelector';
-import { UNIT_DEFINITIONS } from '../constants';
+import { UNIT_DEFINITIONS } from './constants';
 
 
 interface EditKeyResultModalProps {
