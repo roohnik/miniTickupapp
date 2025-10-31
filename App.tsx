@@ -4,18 +4,18 @@ import { useStore } from './stores';
 import { AIPrompts, DEFAULT_AI_PROMPTS } from './services/geminiService';
 import { ComponentStyles, ObjectiveSettings } from './types';
 
-import { Sidebar } from './components/Sidebar';
-import { Header } from './components/Header';
+import { Sidebar } from './Sidebar';
+import { Header } from './Header';
 import LoginPage from './components/LoginPage';
-import DashboardPage from './components/DashboardPage';
+import DashboardPage from './DashboardPage';
 import EditProfileModal from './components/EditProfileModal';
-import ObjectiveSidePanel from './components/ObjectiveSidePanel';
+import ObjectiveSidePanel from './ObjectiveSidePanel';
 import ObjectiveCreationWizard from './components/ObjectiveCreationWizard';
 import SmartObjectiveWizard from './components/SmartObjectiveWizard';
-import EditObjectiveModal from './components/EditObjectiveModal';
+import EditObjectiveModal from './EditObjectiveModal';
 import ConfirmationModal from './components/ConfirmationModal';
-import ArchivedItemsModal from './components/ArchivedItemsModal';
-import EditKeyResultModal from './components/EditKeyResultModal';
+import ArchivedItemsModal from './ArchivedItemsModal';
+import EditKeyResultModal from './EditKeyResultModal';
 import UpdateKRModal from './components/UpdateKRModal';
 import AddKeyResultModal from './components/AddKeyResultModal';
 
