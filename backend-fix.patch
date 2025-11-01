@@ -16,3 +16,21 @@
    };
  
    return KeyResult;
+--- a/models/process.js
++++ b/models/process.js
+@@ -43,10 +43,11 @@ module.exports = (sequelize, DataTypes) => {
+ //   };
+   Process.associate = (models) => {
+     // Process has many Variables !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-    Process.hasMany(models.Variable, {
+-      foreignKey: "process_id",
+-      as: "variables",
+-    });
++    // TODO: Create Variable model before uncommenting
++    // Process.hasMany(models.Variable, {
++    //   foreignKey: "process_id",
++    //   as: "variables",
++    // });
+   
+     // Process belongs to a User (owner)
+     Process.belongsTo(models.User, {
