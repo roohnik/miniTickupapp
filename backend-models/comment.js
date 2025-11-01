@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     id: { 
       type: DataTypes.TEXT, 
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4
+      allowNull: false
     },
     kr_id: {
       type: DataTypes.TEXT,
