@@ -30,8 +30,8 @@ echo ""
 
 echo "🔍 Checking for problematic associations..."
 
-# Check KeyResult
-if grep -q "KeyResult.hasMany(models.Comment" models/keyResult.js | grep -v "^[[:space:]]*//"; then
+# Check KeyResult - look for uncommented lines with the problematic association
+if grep "KeyResult.hasMany(models.Comment" models/keyResult.js | grep -v "^[[:space:]]*//"; then
     echo "⚠️  Found active Comment association in keyResult.js"
     echo "   This needs to be commented out"
     HAS_ERROR=1
@@ -39,8 +39,8 @@ else
     echo "✅ KeyResult Comment association is commented out or removed"
 fi
 
-# Check Process
-if grep -q "Process.hasMany(models.Variable" models/process.js | grep -v "^[[:space:]]*//"; then
+# Check Process - look for uncommented lines with the problematic association
+if grep "Process.hasMany(models.Variable" models/process.js | grep -v "^[[:space:]]*//"; then
     echo "⚠️  Found active Variable association in process.js"
     echo "   This needs to be commented out"
     HAS_ERROR=1
