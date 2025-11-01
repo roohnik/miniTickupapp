@@ -1,0 +1,41 @@
+diff --git a/models/keyResult.js b/models/keyResult.js
+index 0000000..0000000 100644
+--- a/models/keyResult.js
++++ b/models/keyResult.js
+@@ -69,10 +69,11 @@ module.exports = (sequelize, DataTypes) => {
+       foreignKey: "kr_id",
+       as: "checkIns",
+     });
+-    KeyResult.hasMany(models.Comment, {
+-      foreignKey: "kr_id",
+-      as: "comments",
+-    }); // NEW
++    // TODO: Create Comment model before uncommenting
++    // KeyResult.hasMany(models.Comment, {
++    //   foreignKey: "kr_id",
++    //   as: "comments",
++    // });
+   };
+ 
+   return KeyResult;
+diff --git a/models/process.js b/models/process.js
+index 0000000..0000000 100644
+--- a/models/process.js
++++ b/models/process.js
+@@ -43,10 +43,11 @@ module.exports = (sequelize, DataTypes) => {
+ //   };
+   Process.associate = (models) => {
+     // Process has many Variables !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-    Process.hasMany(models.Variable, {
+-      foreignKey: "process_id",
+-      as: "variables",
+-    });
++    // TODO: Create Variable model before uncommenting
++    // Process.hasMany(models.Variable, {
++    //   foreignKey: "process_id",
++    //   as: "variables",
++    // });
+   
+     // Process belongs to a User (owner)
+     Process.belongsTo(models.User, {
+
