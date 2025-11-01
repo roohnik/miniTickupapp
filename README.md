@@ -21,6 +21,8 @@ View your app in AI Studio: https://ai.studio/apps/drive/1IyOxEIK-k-9ifGiAkoJiNs
 
 This frontend connects to the backend at: **[@nikpz/Tickappback](https://github.com/nikpz/Tickappback)**
 
+> **⚠️ BACKEND ERROR FIX AVAILABLE**: If your backend crashes with `KeyResult.hasMany` error, see **[QUICKSTART.md](QUICKSTART.md)** for a 5-minute fix!
+
 The backend provides:
 - Socket.io API for all data operations
 - PostgreSQL database with Sequelize ORM
