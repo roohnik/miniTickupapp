@@ -1,0 +1,18 @@
+--- a/models/keyResult.js
++++ b/models/keyResult.js
+@@ -69,10 +69,11 @@ module.exports = (sequelize, DataTypes) => {
+       foreignKey: "kr_id",
+       as: "checkIns",
+     });
+-    KeyResult.hasMany(models.Comment, {
+-      foreignKey: "kr_id",
+-      as: "comments",
+-    }); // NEW
++    // TODO: Create Comment model before uncommenting
++    // KeyResult.hasMany(models.Comment, {
++    //   foreignKey: "kr_id",
++    //   as: "comments",
++    // });
+   };
+ 
+   return KeyResult;

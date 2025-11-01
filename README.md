@@ -132,6 +132,16 @@ miniTickupapp/
 
 ## Troubleshooting
 
+### Backend Error: KeyResult.hasMany
+If the backend server fails to start with error `KeyResult.hasMany called with something that's not a subclass of Sequelize.Model`, see **[BACKEND_FIX.md](BACKEND_FIX.md)** for the complete solution.
+
+**Quick Fix**: Apply the patch file:
+```bash
+cd /path/to/Tickappback
+patch -p1 < /path/to/this/repo/backend-fix.patch
+npm start
+```
+
 ### Cannot connect to backend
 - Ensure the backend is running on `http://localhost:3000`
 - Check that `VITE_SOCKET_URL` in `.env.local` is correct
