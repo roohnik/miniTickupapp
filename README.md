@@ -23,6 +23,8 @@ This frontend connects to the backend at: **[@nikpz/Tickappback](https://github.
 
 > **⚠️ BACKEND ERROR FIX AVAILABLE**: If your backend crashes with `KeyResult.hasMany` error, see **[QUICKSTART.md](QUICKSTART.md)** for a 5-minute fix!
 
+> **📊 MODEL ASSOCIATIONS ANALYSIS AVAILABLE**: Comprehensive analysis of all 48 backend models with refactoring recommendations. Start with **[DOCUMENTATION_MAP.md](DOCUMENTATION_MAP.md)** or **[ANALYSIS_SUMMARY.md](ANALYSIS_SUMMARY.md)**!
+
 The backend provides:
 - Socket.io API for all data operations
 - PostgreSQL database with Sequelize ORM
@@ -143,6 +145,19 @@ cd /path/to/Tickappback
 patch -p1 < /path/to/this/repo/backend-fix.patch
 npm start
 ```
+
+### Backend Model Association Review
+For a comprehensive analysis of model associations and refactoring recommendations:
+
+**📚 Start Here**:
+- **[DOCUMENTATION_MAP.md](DOCUMENTATION_MAP.md)** - Navigate all documentation
+- **[ANALYSIS_SUMMARY.md](ANALYSIS_SUMMARY.md)** - Executive summary (5 min read)
+
+**📄 Full Documentation**:
+- **[MODEL_REVIEW_INDEX.md](MODEL_REVIEW_INDEX.md)** - Complete package overview
+- **[MODEL_ASSOCIATIONS_ANALYSIS.md](MODEL_ASSOCIATIONS_ANALYSIS.md)** - Detailed analysis of all 48 models
+- **[MODEL_REFACTORING_GUIDE.md](MODEL_REFACTORING_GUIDE.md)** - Step-by-step refactoring guide
+- **[MODEL_ASSOCIATIONS_VISUAL_SUMMARY.md](MODEL_ASSOCIATIONS_VISUAL_SUMMARY.md)** - Quick reference with diagrams
 
 ### Cannot connect to backend
 - Ensure the backend is running on `http://localhost:3000`
