@@ -144,6 +144,11 @@ patch -p1 < /path/to/this/repo/backend-fix.patch
 npm start
 ```
 
+### Backend Model Association Review
+For a comprehensive analysis of model associations and refactoring recommendations, see:
+- **[MODEL_ASSOCIATIONS_ANALYSIS.md](MODEL_ASSOCIATIONS_ANALYSIS.md)** - Detailed analysis of all 48 models
+- **[MODEL_REFACTORING_GUIDE.md](MODEL_REFACTORING_GUIDE.md)** - Quick actionable refactoring guide
+
 ### Cannot connect to backend
 - Ensure the backend is running on `http://localhost:3000`
 - Check that `VITE_SOCKET_URL` in `.env.local` is correct
